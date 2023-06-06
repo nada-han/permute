@@ -17,7 +17,7 @@ const Profil = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch('https://troubled-red-garb.cyclic.app/user');
+        const response = await fetch('https://tiny-worm-nightgown.cyclic.app/professeurs');
         const data = await response.json();
 
         if (response.ok) {
