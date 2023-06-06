@@ -29,7 +29,7 @@ const Inscription = () => {
     };
 
     try {
-      const response = await fetch('https://troubled-red-garb.cyclic.app/professeurs', {
+      const response = await fetch('https://tiny-worm-nightgown.cyclic.app/professeurs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
