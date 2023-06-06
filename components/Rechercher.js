@@ -13,7 +13,7 @@ const Rechercher = () => {
 
   useEffect(() => {
     // Fetch specialite options from API
-    fetch('https://troubled-red-garb.cyclic.app/professeurs')
+    fetch('https://tiny-worm-nightgown.cyclic.app/professeurs')
       .then(response => response.json())
       .then(data => {
         // Extract unique specialite values from data
@@ -31,7 +31,7 @@ const Rechercher = () => {
       .catch(error => console.log(error));
 
     // Fetch villeActuelle options from API
-    fetch('https://troubled-red-garb.cyclic.app/professeurs')
+    fetch('https://tiny-worm-nightgown.cyclic.app/professeurs')
       .then(response => response.json())
       .then(data => {
         // Extract unique villeActuelle values from data
@@ -49,7 +49,7 @@ const Rechercher = () => {
       .catch(error => console.log(error));
 
     // Fetch villesDesirees options from API
-    fetch('https://troubled-red-garb.cyclic.app/professeurs')
+    fetch('https://tiny-worm-nightgown.cyclic.app/professeurs')
       .then(response => response.json())
       .then(data => {
         // Extract unique villesDesirees values from data
@@ -82,7 +82,7 @@ const Rechercher = () => {
         .join('&');
 
       // Perform search request
-      const response = await fetch(`https://troubled-red-garb.cyclic.app/professeurs?${queryString}`);
+      const response = await fetch(`https://tiny-worm-nightgown.cyclic.app/professeurs?${queryString}`);
       const data = await response.json();
 
       // Set search results
