@@ -28,7 +28,7 @@ const Accueil = () => {
   const fetchNumProfsInscrits = async () => {
     try {
       const response = await axios.get(
-        'https://troubled-red-garb.cyclic.app/professeurs'
+        'https://tiny-worm-nightgown.cyclic.app/professeurs'
       );
       const data = response.data;
       const numProfsInscrits = data.length;
@@ -44,7 +44,7 @@ const Accueil = () => {
   const fetchProfsBySpeciality = async () => {
     try {
       const response = await axios.get(
-        'https://troubled-red-garb.cyclic.app/professeurs'
+        'https://tiny-worm-nightgown.cyclic.app/professeurs'
       );
       const data = response.data;
       const specialties = countProfessorsBySpecialty(data);
@@ -87,7 +87,7 @@ const Accueil = () => {
   const fetchProfsByGrade = async () => {
     try {
       const response = await axios.get(
-        'https://troubled-red-garb.cyclic.app/professeurs'
+        'https://tiny-worm-nightgown.cyclic.app/professeurs'
       );
       const data = response.data;
       const grades = countProfessorsByGrade(data);
@@ -123,7 +123,7 @@ const Accueil = () => {
   const fetchVillesDesirees = async () => {
     try {
       const response = await axios.get(
-        'https://troubled-red-garb.cyclic.app/professeurs'
+        'https://tiny-worm-nightgown.cyclic.app/professeurs'
       );
       const data = response.data;
       const villesDesirees = countProfessorsByDesiredCity(data);
